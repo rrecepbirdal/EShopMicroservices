@@ -7,10 +7,10 @@ namespace Ordering.Application
     {
         public static IServiceCollection AddApplicationSerivices (this IServiceCollection services)
         {
-            //services.AddMediatR(cfg =>
-            //{
-            //    cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
-            //});
+            services.AddMediatR(cfg =>
+            {
+                cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
+            });
 
             return services;
         }
